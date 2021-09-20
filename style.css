@@ -1,81 +1,89 @@
 :root {
-    --orange: #fde9d9;
-    --green: #eaf1dd;
-    --blue: #c6d9f1;
+  --orange: #fde9d9;
+  --green: #eaf1dd;
+  --blue: #c6d9f1;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-areas:
-    "header header  header"
-    "lside  alert   alert"
-    "lside  content rside"
-    "footer footer  footer";
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    'header header  header'
+    'lside  alert   alert'
+    'lside  content rside'
+    'footer footer  footer';
 }
 
 .header {
-    grid-area: header;
+  grid-area: header;
 }
 
 .footer {
-    grid-area: footer;
+  grid-area: footer;
 }
 
-.header, .footer {
-    background: var(--blue);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5em;
+.header,
+.footer {
+  background: var(--blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5em;
 }
 
-.footer--copyright {
-    font-weight: normal;
+.footer__copyright {
+  font-weight: normal;
 }
 
 .alert {
-    grid-area: alert;
-    background: var(--green);
-    text-align: right;
+  grid-area: alert;
+  background: var(--green);
+  text-align: right;
 }
 
 .lside {
-    grid-area: lside;
-    background: var(--orange);
+  grid-area: lside;
+  background: var(--orange);
 }
 
 .rside {
-    grid-area: rside;
-    background: var(--orange);
+  grid-area: rside;
+  background: var(--orange);
 }
 
 .content {
-    grid-area: content;
+  grid-area: content;
 }
 
-.lside, .rside, .alert, .content {
-    padding: 1em;
+.lside,
+.rside,
+.alert,
+.content {
+  padding: 1em;
 }
 
-.lside, .rside, .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.lside,
+.rside,
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.header--navbar a {
-    padding: 10px 20px;
-    text-decoration: none;
-    color: #000;
+.header__navbar a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
 }
 
-.header--navbar a:hover, .header--navbar a.active {
-    text-decoration: underline;
+.header__navbar a:hover,
+.header__navbar a.active {
+  text-decoration: underline;
 }
