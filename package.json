@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "prettier --check . && stylelint \"**/*.css\" && eslint .",
-    "lint:fix": "prettier --write . && stylelint \"**/*.css\" --fix",
+    "lint": "eslint .",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:fmt": "prettier --check . ",
+    "lint:fix": "prettier --write . && stylelint \"**/*.css\" --fix && eslint --fix .",
     "prepare": "husky install"
   },
   "repository": {
