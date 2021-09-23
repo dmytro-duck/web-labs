@@ -1,0 +1,36 @@
+{
+  "name": "web-labs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:fmt": "prettier --check . ",
+    "lint:fix": "prettier --write . && stylelint \"**/*.css\" --fix && eslint --fix .",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmytro-duck/web-labs.git"
+  },
+  "keywords": [],
+  "author": "Dmytro Herashchenko <moodduckk@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmytro-duck/web-labs/issues"
+  },
+  "homepage": "https://github.com/dmytro-duck/web-labs#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-metarhia": "^7.0.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-sonarjs": "^0.10.0",
+    "husky": "^7.0.2",
+    "npm-run-parallel": "^0.6.0",
+    "prettier": "^2.4.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0"
+  }
+}
