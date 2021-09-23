@@ -1,6 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm run lint
-npm run lint:css
-npm run lint:fmt
+npx npm-run-parallel lint lint:css lint:fmt

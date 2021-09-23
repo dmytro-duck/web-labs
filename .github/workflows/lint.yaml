@@ -15,4 +15,4 @@ jobs:
           node-version: '14'
           cache: 'npm'
       - run: npm ci
-      - run: npm run lint
+      - run: npx npm-run-parallel lint lint:css lint:fmt
