@@ -20,16 +20,16 @@ body {
     'footer footer  footer';
 }
 
-.header {
+header {
   grid-area: header;
 }
 
-.footer {
+footer {
   grid-area: footer;
 }
 
-.header,
-.footer {
+header,
+footer {
   background: var(--blue);
   display: flex;
   justify-content: space-between;
@@ -37,7 +37,7 @@ body {
   padding: 0 5em;
 }
 
-.footer__copyright {
+footer h5 {
   font-weight: normal;
 }
 
@@ -57,32 +57,32 @@ body {
   background: var(--orange);
 }
 
-.content {
+main {
   grid-area: content;
 }
 
 .lside,
 .rside,
 .alert,
-.content {
+main {
   padding: 1em;
 }
 
 .lside,
 .rside,
-.content {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.header nav a {
+header nav a {
   padding: 10px 20px;
   text-decoration: none;
   color: #000;
 }
 
-.header nav a:hover,
-.header nav a.active {
+header nav a:hover,
+header nav a.active {
   text-decoration: underline;
 }
